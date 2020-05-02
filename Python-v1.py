@@ -22,7 +22,6 @@ for j in range (2,10001):
 # Float atau bilangan pecahan dibatasi akurasinya pada 15 desimal. 
 
 #String 
-
 s = "Hello World!"
 print(s[4])         #ngambil char ke 4 dari s dengan itungan array
 print(s[6:11])      #ngambil dari char ke 6 sampe 10 dengan itungan array, dari 6 sampe 11-1 (10) emang gtu ngitungnya
@@ -77,3 +76,24 @@ while True:
     print('Passwords can only have letters and numbers.')
 
 """
+3 * 5
+for i in range (3, 5):
+    print(i)
+
+"""kalkulator"""
+ 
+class Kalkulator:
+    """kalkulator tambah kurang"""
+    def __init__(self, _i):
+        self.i = _i
+ 
+    def tambah(self, _i): return self.i + _i
+ 
+    def kurang(self, _i):
+        return self.i - _i  
+
+a = 1
+if a % 2 == 0:
+    print('bilangan {} adalah genap'.format(a))
+else:
+    print('bilangan {} adalah ganjil'.format(a))
