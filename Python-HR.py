@@ -98,6 +98,7 @@ for i in range(n):
 
 #######################
 """
+
 print("Mini-Max Sum\r")
 arr = []
 

@@ -1,7 +1,7 @@
 #Library
 import os
 import sys
-
+""""
 #Tipe Data (Ngecek Tipe Data)
 
 a = 5
@@ -54,7 +54,7 @@ print('HELLO'.lower())
 print('HELLO'.lower().islower())
 
 'abcde'.islower()
-"""
+
 isalpha() mengembalikan True jika string berisi hanya huruf dan tidak kosong.
 isalnum() mengembalikan True jika string berisi hanya huruf atau angka, dan tidak kosong.
 isdecimal() mengembalikan True jika string berisi hanya angka/numerik dan tidak kosong.
@@ -75,7 +75,7 @@ while True:
         break
     print('Passwords can only have letters and numbers.')
 
-"""
+
 3 * 5
 for i in range (3, 5):
     print(i)
@@ -92,8 +92,39 @@ class Kalkulator:
     def kurang(self, _i):
         return self.i - _i  
 
-a = 1
-if a % 2 == 0:
-    print('bilangan {} adalah genap'.format(a))
-else:
-    print('bilangan {} adalah ganjil'.format(a))
+
+a = []
+b = []
+c = list(range(0,2))
+z = 3
+for i in range (z):
+    temp = int(input())
+    a.append(temp)
+for i in range (z):
+    temp = int(input())
+    b.append(temp)
+i = 0
+nilaiA = 0
+nilaiB = 0
+for g in range (z):
+    if a[i] > b[i]:
+        nilaiA = nilaiA + 1
+    elif a[i] < b[i]:
+        nilaiB = nilaiB + 1
+    i = i + 1
+
+c[0] = nilaiA;
+c[1] = nilaiB;
+
+print(c)
+
+print('\n')                     
+kondisi = True
+while kondisi == True:
+    x = int(input())
+    if x > 10:                                  #Forever Looping but with condition
+        print("Inputan diatas 10")
+        kondisi = False
+
+
+"""
